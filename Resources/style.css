@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Crimson Text';
+}
+
+body{
+    display: flex;
+    flex-flow: column;
+}
+
+/*Navigation Bar*/
+
+header #navbar-section{
+    position:absolute;
+    flex-flow: row;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0 1.5rem 0;
+    justify-content: space-between;
+    opacity: 0.7;
+}
+
+header .title{
+    font-size: 1.5rem;
+    padding-left: 2.5rem
+}
+
+header .pages{
+    padding-right: 2.5rem;
+}
+
+
+header nav a{
+    padding: .9rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+header nav a:hover{
+    color: rgb(146, 58, 197);
+    text-decoration-line: overline;
+}
+
+/*Welcome words*/
+
+#welcome-section{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-flow: row;
+    margin: 0 auto;
+    align-items: center;
+    background-image: linear-gradient(rgba(255, 254, 255, 0.8),rgba(181, 137, 220, 0.8)), url("./Images/patternpad.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 4px solid rgb(144, 96, 154);
+}
+
+#welcome-section h2{
+    text-decoration: none;
+    font-size: 7rem;
+    line-height: 1.7;
+    width: 75vw;
+}
+
+#welcome-section > h2:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+/*About me*/
+
+#aboutme-section {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    justify-content: center;
+    padding-top: 6vh;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(155, 111, 164);
+}
+
+#aboutme-section h3{
+    font-size: 4.5rem;
+    font-style: italic;
+    font-weight: normal;
+}
+
+#aboutme-section img{
+    width: 350px;
+    height: 350px;
+    object-fit: none;
+    padding-top: 14vh;
+}
+
+figcaption{
+  font-size: 2.5rem;
+  padding-top: 2.25rem;
+  font-family: 'Crimson Text';
+}
+
+.aboutme-rows{
+    display: inline-flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+.aboutme-rows img{
+  padding: 5rem;
+}
+
+#aboutme-row1 img:hover{
+  object-fit: cover;
+  transform: scale(1.6);
+  position: relative;
+  transition-duration: 1s;
+}
+
+#aboutme-row2 img:hover{
+  object-fit: cover;
+  transform: scale(1.6);
+  position: relative;
+  transition-duration: 1s;
+}
+
+#aboutme-row3 img:hover{
+  object-fit: cover;
+  transform: scale(1.6);
+  position: relative;
+  transition-duration: 1s;
+}
+
+/*Website Section*/
+
+#website-section{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60vh;
+  background-color: rgba(221, 193, 235, 0.769);
+}
+
+#website-section h3{
+  font-size: 4.5rem;
+  font-weight: bold;
+  padding-right: 4rem;
+  width: 30vw;
+}
+
+#website-section p{
+  font-size: 1.4rem;
+  width: 55vw;
+  line-height: 2;
+}
+
+
