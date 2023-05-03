@@ -26,7 +26,7 @@ header #navbar-section{
 
 header .title{
     font-size: 1.5rem;
-    padding-left: 2.5rem
+    padding-left: 2.5rem;
 }
 
 header .pages{
@@ -104,6 +104,7 @@ header nav a:hover{
 figcaption{
   font-size: 2.5rem;
   padding-top: 2.25rem;
+  padding-bottom: 6vh;
   font-family: 'Crimson Text';
 }
 
@@ -145,7 +146,7 @@ figcaption{
   justify-content: center;
   width: 100%;
   height: 60vh;
-  background-color: rgba(7, 7, 7, 0.769);
+  background-color: rgba(221, 193, 235, 0.769);
 }
 
 #website-section h3{
@@ -162,3 +163,202 @@ figcaption{
 }
 
 
+/*Journey Page*/
+
+
+/*Title*/
+
+#navbar-section-2 {
+  position:absolute;
+  flex-flow: row;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0 1.5rem 0;
+  justify-content: space-between;
+  opacity: 0.9;
+}
+
+#navbar-section-2 h1, #navbar-section-2 a{
+  color: white;
+}
+
+#Journey-title {
+  background-image: linear-gradient(rgba(11, 11, 11, 0.9),rgba(0, 0, 0, 0.9)), url("./Images/Blank\ 16\ Grids\ Collage\ \(2\).png");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  height: 200vh;
+  display: flex;
+  flex-flow: column;
+}
+
+#Journey-title h1{
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+  font-size: 10rem;
+  padding: 35vh;
+}
+
+/*Start of Journey*/
+
+#Fourteen{
+  background-image: linear-gradient(rgba(11, 11, 11, 0.9),rgba(0, 0, 0, 0.9)), url("./Images/Blank\ 16\ Grids\ Collage\ \(4\).png");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  height: 200vh;
+}
+
+.image-14 img{
+  width: 20vw;
+  height: 40vh;
+  border-radius: 1rem;
+  margin-left: 13vw;
+}
+
+.image-14 h2{
+  color: white;
+  font-size: 4rem;
+  padding-left: 10vw;
+  width: 50vw;
+  font-weight: normal;
+}
+
+.image-14{
+  position: relative;
+  padding-top: 20vh;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.description-14 p{
+  background-color: rgba(255, 255, 255, 0.45);
+  border-radius: 1rem;
+  font-size: 2rem;
+  width: 40vw;
+  padding: 2rem;
+}
+
+.description-14{
+  position: relative;
+  padding-left: 50vw;
+  padding-top: 60vh;
+}
+
+
+/*Statistics*/
+
+#Statistics{
+  background-image: linear-gradient(rgba(11, 11, 11, 0.9),rgba(0, 0, 0, 0.9)), url("./Images/Blank\ 16\ Grids\ Collage.png");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  height: 200vh;
+  display: flex;
+  flex-flow: column;
+}
+
+#Statistics p{
+  color: white;
+  font-size: 4rem;
+  line-height: 4;
+}
+
+/*End of Journey*/
+
+#Eighteen{
+  background-image: linear-gradient(rgba(11, 11, 11, 0.9),rgba(0, 0, 0, 0.9)), url("./Images/Blank\ 16\ Grids\ Collage\ \(5\).png");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  height: 200vh;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+
+.image-18 img{
+  width: 20vw;
+  height: 40vh;
+  border-radius: 1rem;
+  margin-right: 13vw;
+}
+
+.image-18 h2{
+  color: white;
+  font-size: 4rem;
+  padding-right: 10vw;
+  width: 50vw;
+  font-weight: normal;
+}
+
+.image-18{
+  position: relative;
+  padding-top: 20vh;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.description-18 p{
+  background-color: rgba(255, 255, 255, 0.45);
+  border-radius: 1rem;
+  font-size: 2rem;
+  width: 40vw;
+  padding: 2rem;
+}
+
+.description-18{
+  position: relative;
+  padding-right: 50vw;
+  padding-top: 60vh;
+}
+
+/*Classes Page*/
+
+#classes-body{
+  background-image: linear-gradient( 135deg, rgba(243, 230, 251, 0.8),rgba(166, 123, 205, 0.8));
+}
+
+.class{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding: 8rem;
+}
+
+.class-title{
+  padding-top: 15rem;
+  position: relative;
+  padding-right: 58vw;
+}
+
+.class-title h2{
+  font-size: 4rem;
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+.class-image{
+  width: 30vw;
+  height: 40vh;
+  padding-left: 8rem;
+}
+
+.class h3{
+  font-size: 2rem;
+  text-align: left;
+  padding-bottom: 1.5rem;
+}
+
+.class p{
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.class-description{
+  width: 30vw;
+}
