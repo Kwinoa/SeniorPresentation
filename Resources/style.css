@@ -13,15 +13,46 @@ body{
 
 /*Navigation Bar*/
 
-header #navbar-section{
-    position:absolute;
-    flex-flow: row;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 1.5rem 0 1.5rem 0;
-    justify-content: space-between;
-    opacity: 0.7;
+#navbar-section{
+  position:absolute;
+  flex-flow: row;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0 1.5rem 0;
+  justify-content: space-between;
+  opacity: 0.7;
+}
+
+#navbar-section-2{
+  flex-flow: row;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0 1.5rem 0;
+  justify-content: space-between;
+  opacity: 0.7;
+}
+
+#navbar-section-3{
+  flex-flow: row;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0 1.5rem 0;
+  justify-content: space-between;
+  opacity: 0.7;
+}
+
+#navbar-section-4{
+  position: fixed;
+  flex-flow: row;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0 1.5rem 0;
+  justify-content: space-between;
+  background-color: rgb(231, 221, 235);
 }
 
 header .title{
@@ -34,16 +65,51 @@ header .pages{
 }
 
 
-header nav a{
+#navbar-section a{
     padding: .9rem;
     text-decoration: none;
     font-size: 1.3rem;
 }
 
-header nav a:hover{
+#navbar-section a:hover{
     color: rgb(146, 58, 197);
     text-decoration-line: overline;
 }
+
+#navbar-section-2 a{
+  padding: .9rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+#navbar-section-2 a:hover{
+  color: rgb(255, 255, 255);
+  text-decoration-line: overline;
+}
+
+#navbar-section-3 a{
+  padding: .9rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+#navbar-section-3 a:hover{
+  color: rgb(146, 58, 197);
+  text-decoration-line: overline;
+}
+
+#navbar-section-4 a{
+  padding: .9rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+#navbar-section-4 a:hover{
+  color: rgb(146, 58, 197);
+  text-decoration-line: overline;
+}
+
+
 
 /*Welcome words*/
 
@@ -59,7 +125,7 @@ header nav a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-bottom: 4px solid rgb(144, 96, 154);
+    border-bottom: 5px solid rgb(145, 94, 155);
 }
 
 #welcome-section h2{
@@ -85,7 +151,7 @@ header nav a:hover{
     justify-content: center;
     padding-top: 6vh;
     background-color: rgb(255, 255, 255);
-    border-bottom: 4px solid rgb(155, 111, 164);
+    border-bottom: 5px solid rgb(192, 161, 198);
 }
 
 #aboutme-section h3{
@@ -168,22 +234,11 @@ figcaption{
 
 /*Title*/
 
-#navbar-section-2 {
-  position:absolute;
-  flex-flow: row;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 1.5rem 0 1.5rem 0;
-  justify-content: space-between;
-  opacity: 0.9;
-}
-
 #navbar-section-2 h1, #navbar-section-2 a{
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
-#Journey-title {
+#top-journey {
   background-image: linear-gradient(rgba(11, 11, 11, 0.9),rgba(0, 0, 0, 0.9)), url("./Images/Blank\ 16\ Grids\ Collage\ \(2\).png");
   background-size: cover;
   background-repeat: none;
@@ -197,7 +252,7 @@ figcaption{
   color: rgb(255, 255, 255);
   opacity: 0.9;
   font-size: 10rem;
-  padding: 35vh;
+  padding: 25vh;
 }
 
 /*Start of Journey*/
@@ -319,7 +374,7 @@ figcaption{
 /*Classes Page*/
 
 #classes-body{
-  background-image: linear-gradient( 135deg, rgba(243, 230, 251, 0.8),rgba(166, 123, 205, 0.8));
+  background-image: linear-gradient( 135deg, rgba(255, 255, 255, 0.8),rgba(166, 123, 205, 0.8));
 }
 
 .class{
@@ -330,7 +385,7 @@ figcaption{
 }
 
 .class-title{
-  padding-top: 15rem;
+  padding-top: 10vh;
   position: relative;
   padding-right: 58vw;
 }
@@ -361,4 +416,67 @@ figcaption{
 
 .class-description{
   width: 30vw;
+}
+
+/*Work Page*/
+
+#work-body{
+  background-color: rgb(0, 0, 0);
+}
+
+.gallery{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  margin-top: 5.8rem;
+}
+
+.gallery div{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.work-box{
+  background-color: rgb(217, 198, 217);
+  width: 90vw;
+  height: 75vh;
+  padding-right: 5rem;
+}
+
+.gallery img{
+  width: 50vw;
+  height: 65vh;
+  border-radius: .5rem;
+  margin-left: 3.5rem;
+  border: 7px solid rgb(177, 155, 182);
+}
+
+.gallery h3{
+  font-size: 3.2rem;
+  width: auto;
+  color: rgb(87, 87, 87);
+  writing-mode: vertical-rl;
+  font-weight: bold;
+  padding-right: 2rem;
+  padding-left: 8rem;
+  font-style: italic;
+  text-decoration: overline;
+}
+
+.gallery p{
+  font-size: 1.2rem;
+  color: rgb(77, 77, 77);
+  padding-right: 1rem;
+  width: 20vw;
+  line-height: 2;
+  text-align: left;
+}
+
+#work-footer{
+  height: 11vh;
+  width: 466.5vw;
+  opacity: 1;
+  background-color: rgb(231, 221, 235);
 }
