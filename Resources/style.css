@@ -52,7 +52,21 @@ body{
   align-items: center;
   padding: 1.5rem 0 1.5rem 0;
   justify-content: space-between;
-  background-color: rgb(231, 221, 235);
+  background-color: rgb(255, 255, 255);
+}
+
+#navbar-section-5{
+  position: fixed;
+  flex-flow: row;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0 1.5rem 0;
+  justify-content: space-between;
+}
+
+#work-header section{
+  box-shadow: 0px 2px 10px rgb(161, 143, 167);
 }
 
 header .title{
@@ -65,13 +79,17 @@ header .pages{
 }
 
 
-#navbar-section a{
+nav a{
     padding: .9rem;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
-#navbar-section a:hover{
+nav{
+  padding-right: 1rem;
+}
+
+nav a:hover{
     color: rgb(146, 58, 197);
     text-decoration-line: overline;
 }
@@ -86,30 +104,6 @@ header .pages{
   color: rgb(255, 255, 255);
   text-decoration-line: overline;
 }
-
-#navbar-section-3 a{
-  padding: .9rem;
-  text-decoration: none;
-  font-size: 1.3rem;
-}
-
-#navbar-section-3 a:hover{
-  color: rgb(146, 58, 197);
-  text-decoration-line: overline;
-}
-
-#navbar-section-4 a{
-  padding: .9rem;
-  text-decoration: none;
-  font-size: 1.3rem;
-}
-
-#navbar-section-4 a:hover{
-  color: rgb(146, 58, 197);
-  text-decoration-line: overline;
-}
-
-
 
 /*Welcome words*/
 
@@ -130,14 +124,9 @@ header .pages{
 
 #welcome-section h2{
     text-decoration: none;
-    font-size: 7rem;
+    font-size: 8rem;
     line-height: 1.7;
     width: 75vw;
-}
-
-#welcome-section > h2:hover{
-    transform: scale(1.1);
-    transition-duration: 0.5s;
 }
 
 /*About me*/
@@ -149,7 +138,7 @@ header .pages{
     flex-flow: column;
     position: relative;
     justify-content: center;
-    padding-top: 6vh;
+    margin-top: 6vh;
     background-color: rgb(255, 255, 255);
     border-bottom: 5px solid rgb(192, 161, 198);
 }
@@ -161,16 +150,16 @@ header .pages{
 }
 
 #aboutme-section img{
-    width: 350px;
-    height: 350px;
-    object-fit: none;
-    padding-top: 14vh;
+    width: 19vw;
+    height: 39vh;
+    object-fit:none;
+    box-shadow: 2px 2px 6px black;
 }
 
 figcaption{
   font-size: 2.5rem;
-  padding-top: 2.25rem;
-  padding-bottom: 6vh;
+  margin-bottom: 6vh;
+  margin-top: 1.5rem;
   font-family: 'Crimson Text';
 }
 
@@ -180,28 +169,32 @@ figcaption{
     justify-content: space-evenly;
 }
 .aboutme-rows img{
-  padding: 5rem;
+  margin: 5rem;
+  border-radius: 1rem;
 }
 
 #aboutme-row1 img:hover{
   object-fit: cover;
-  transform: scale(1.6);
+  transform: scale(1.7);
   position: relative;
   transition-duration: 1s;
+  box-shadow: 6px 6px 15px black;
 }
 
 #aboutme-row2 img:hover{
   object-fit: cover;
-  transform: scale(1.6);
+  transform: scale(1.7);
   position: relative;
   transition-duration: 1s;
+  box-shadow: 6px 6px 15px black;
 }
 
 #aboutme-row3 img:hover{
   object-fit: cover;
-  transform: scale(1.6);
+  transform: scale(1.7);
   position: relative;
   transition-duration: 1s;
+  box-shadow: 6px 6px 15px black;
 }
 
 /*Website Section*/
@@ -219,7 +212,7 @@ figcaption{
   font-size: 4.5rem;
   font-weight: bold;
   padding-right: 4rem;
-  width: 30vw;
+  width: 20vw;
 }
 
 #website-section p{
@@ -239,17 +232,16 @@ figcaption{
 }
 
 #top-journey {
-  background-image: linear-gradient(rgba(11, 11, 11, 0.9),rgba(0, 0, 0, 0.9)), url("./Images/Blank\ 16\ Grids\ Collage\ \(2\).png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, .9)), url("./Images/Blank\ 16\ Grids\ Collage\ \(2\).png");
   background-size: cover;
   background-repeat: none;
-  background-position: center;
-  height: 200vh;
+  height: 156.7vh;
   display: flex;
   flex-flow: column;
 }
 
 #Journey-title h1{
-  color: rgb(255, 255, 255);
+  color: rgb(176, 176, 176);
   opacity: 0.9;
   font-size: 10rem;
   padding: 25vh;
@@ -258,65 +250,65 @@ figcaption{
 /*Start of Journey*/
 
 #Fourteen{
-  background-image: linear-gradient(rgba(11, 11, 11, 0.9),rgba(0, 0, 0, 0.9)), url("./Images/Blank\ 16\ Grids\ Collage\ \(4\).png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url("./Images/Blank\ 16\ Grids\ Collage\ \(4\).png");
   background-size: cover;
   background-repeat: none;
   background-position: center;
-  height: 200vh;
+  height: 208vh;
 }
 
 .image-14 img{
   width: 20vw;
-  height: 40vh;
+  height: 50vh;
   border-radius: 1rem;
-  margin-left: 13vw;
+  margin-bottom: 4rem;
 }
 
 .image-14 h2{
-  color: white;
+  color: rgb(177, 177, 177);
   font-size: 4rem;
-  padding-left: 10vw;
   width: 50vw;
   font-weight: normal;
 }
 
 .image-14{
-  position: relative;
-  padding-top: 20vh;
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
+  margin-top: 10vh;
+  margin-right: 60vw;
   align-items: center;
-}
-
-.description-14 p{
-  background-color: rgba(255, 255, 255, 0.45);
-  border-radius: 1rem;
-  font-size: 2rem;
-  width: 40vw;
-  padding: 2rem;
+  justify-content: center;
 }
 
 .description-14{
+  background-color: rgba(255, 255, 255, 0.45);
+  border-radius: 1rem;
+  font-size: 2rem;
+  width: fit-content;
+  padding: 4rem;
   position: relative;
-  padding-left: 50vw;
-  padding-top: 60vh;
+  margin-left: 60vw;
+  margin-top: 40vh;
+  text-align: left;
+  line-height: 2;
 }
+
 
 
 /*Statistics*/
 
 #Statistics{
-  background-image: linear-gradient(rgba(11, 11, 11, 0.9),rgba(0, 0, 0, 0.9)), url("./Images/Blank\ 16\ Grids\ Collage.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url("./Images/Blank\ 16\ Grids\ Collage.png");
   background-size: cover;
   background-repeat: none;
   background-position: center;
-  height: 200vh;
+  height: 207vh;
   display: flex;
   flex-flow: column;
 }
 
 #Statistics p{
-  color: white;
+  color: rgb(177, 177, 177);
   font-size: 4rem;
   line-height: 4;
 }
@@ -324,54 +316,57 @@ figcaption{
 /*End of Journey*/
 
 #Eighteen{
-  background-image: linear-gradient(rgba(11, 11, 11, 0.9),rgba(0, 0, 0, 0.9)), url("./Images/Blank\ 16\ Grids\ Collage\ \(5\).png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url("./Images/Blank\ 16\ Grids\ Collage\ \(5\).png");
   background-size: cover;
   background-repeat: none;
   background-position: center;
-  height: 200vh;
+  height: 213vh;
   display: flex;
   flex-flow: column;
-  align-items: flex-end;
 }
 
 .image-18 img{
   width: 20vw;
-  height: 40vh;
+  height: 50vh;
   border-radius: 1rem;
-  margin-right: 13vw;
+  margin-bottom: 4rem;
 }
 
 .image-18 h2{
-  color: white;
+  color: rgb(177, 177, 177);
   font-size: 4rem;
-  padding-right: 10vw;
-  width: 50vw;
   font-weight: normal;
 }
 
 .image-18{
-  position: relative;
-  padding-top: 20vh;
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   align-items: center;
-}
-
-.description-18 p{
-  background-color: rgba(255, 255, 255, 0.45);
-  border-radius: 1rem;
-  font-size: 2rem;
-  width: 40vw;
-  padding: 2rem;
+  justify-content: center;
+  margin-left: 60vw;
+  margin-top: 20vh;
 }
 
 .description-18{
+  background-color: rgba(255, 255, 255, 0.45);
+  border-radius: 1rem;
+  font-size: 2rem;
+  width: fit-content;
+  padding: 4rem;
+  margin-top: 40vh;
+  margin-left: 10vw;
   position: relative;
-  padding-right: 50vw;
-  padding-top: 60vh;
+  text-align: left;
+  line-height: 2;
 }
 
 /*Classes Page*/
+
+hr{
+  border: 1.34px solid rgb(144, 144, 144);
+  width: 85vw;
+  align-self: center;
+}
 
 #classes-body{
   background-image: linear-gradient( 135deg, rgba(255, 255, 255, 0.8),rgba(166, 123, 205, 0.8));
@@ -380,42 +375,43 @@ figcaption{
 .class{
   display: flex;
   flex-flow: row;
-  justify-content: center;
-  padding: 8rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 8rem;
 }
 
 .class-title{
-  padding-top: 10vh;
+  padding-top: 8vh;
   position: relative;
   padding-right: 58vw;
 }
 
 .class-title h2{
-  font-size: 4rem;
+  font-size: 5rem;
   margin-left: 10px;
   font-weight: bolder;
 }
 
-.class-image{
-  width: 30vw;
-  height: 40vh;
-  padding-left: 8rem;
+.class img{
+  width: 40vw;
+  height: 60vh;
+  margin-left: 5rem;
+  border-radius: 2rem;
 }
 
 .class h3{
-  font-size: 2rem;
+  font-size: 4.5rem;
   text-align: left;
-  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 40vw;
+  letter-spacing: 3.5px;
 }
 
 .class p{
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.5rem;
+  line-height: 2;
   text-align: left;
-}
-
-.class-description{
-  width: 30vw;
+  width: 40vw;
 }
 
 /*Work Page*/
@@ -439,44 +435,66 @@ figcaption{
 }
 
 .work-box{
-  background-color: rgb(217, 198, 217);
+  background-color: rgb(231, 221, 235);
   width: 90vw;
-  height: 75vh;
-  padding-right: 5rem;
+  height: 81.5vh;
+  padding-right: 12rem;
+  padding-left: 3rem;
 }
 
 .gallery img{
   width: 50vw;
   height: 65vh;
-  border-radius: .5rem;
-  margin-left: 3.5rem;
-  border: 7px solid rgb(177, 155, 182);
+  margin-left: 5.5rem;
+  border: 15px solid rgb(255, 255, 255);
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.work-box .rabbit{
+  height: 70vh;
+  width: 45vw;
+}
+
+.work-box .chairs{
+  width: 50vw;
+  height: 55vh;
+}
+
+.work-box .crochet{
+  height: 70vh;
+  width: 35vw;
+}
+
+.work-box .ww2{
+  height: 75vh;
+  width: 25vw;
 }
 
 .gallery h3{
-  font-size: 3.2rem;
+  font-size: 4rem;
   width: auto;
-  color: rgb(87, 87, 87);
+  color: rgb(126, 98, 148);
   writing-mode: vertical-rl;
   font-weight: bold;
-  padding-right: 2rem;
-  padding-left: 8rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
   font-style: italic;
   text-decoration: overline;
 }
 
 .gallery p{
-  font-size: 1.2rem;
-  color: rgb(77, 77, 77);
+  font-size: 1.5rem;
+  color: rgb(91, 33, 118);
   padding-right: 1rem;
-  width: 20vw;
+  width: 30vw;
   line-height: 2;
   text-align: left;
 }
 
 #work-footer{
-  height: 11vh;
-  width: 466.5vw;
-  opacity: 1;
-  background-color: rgb(231, 221, 235);
+  height: 5vh;
+  width: 608.4vw;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px -3px 10px rgb(161, 143, 167);
 }
