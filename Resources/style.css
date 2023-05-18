@@ -83,9 +83,9 @@ header .pages{
 
 
 nav a{
-    padding: .9rem;
+    padding: .9rem 1.3rem;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 nav{
@@ -106,6 +106,28 @@ nav a:hover{
 #navbar-section-2 a:hover{
   color: rgb(255, 255, 255);
   text-decoration-line: overline;
+}
+
+@media only screen and (max-width:1500px) {
+  nav a{
+    font-size: 1.55rem;
+    padding: .9rem 1.1rem;
+  }
+  
+  header .title{
+    font-size: 1.55rem;
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  nav a{
+    font-size: 1.3rem;
+    padding: .9rem 1rem;
+  }
+  
+  header .title{
+    font-size: 1.4rem;
+  }
 }
 
 /*Welcome words*/
@@ -130,6 +152,19 @@ nav a:hover{
     font-size: 8rem;
     line-height: 1.7;
     width: 75vw;
+}
+
+@media only screen and (max-width:1400px) {
+  #welcome-section h2{
+    font-size: 7rem;
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  #welcome-section h2{
+    font-size: 5rem;
+    width: 85vw;
+  }
 }
 
 /*About me*/
@@ -178,7 +213,7 @@ figcaption{
 
 #aboutme-row1 img:hover{
   object-fit: cover;
-  transform: scale(1.63);
+  transform: scale(1.6);
   position: relative;
   transition-duration: 1s;
   box-shadow: 6px 6px 15px black;
@@ -186,7 +221,7 @@ figcaption{
 
 #aboutme-row2 img:hover{
   object-fit: cover;
-  transform: scale(1.63);
+  transform: scale(1.6);
   position: relative;
   transition-duration: 1s;
   box-shadow: 6px 6px 15px black;
@@ -194,10 +229,21 @@ figcaption{
 
 #aboutme-row3 img:hover{
   object-fit: cover;
-  transform: scale(1.63);
+  transform: scale(1.6);
   position: relative;
   transition-duration: 1s;
   box-shadow: 6px 6px 15px black;
+}
+
+@media only screen and (max-width:1200px) {
+  #aboutme-section img{
+    height: 30vh;
+    width: 20vw;
+  }
+
+  figcaption{
+    font-size: 2rem;
+  }
 }
 
 /*Website Section*/
@@ -235,7 +281,7 @@ figcaption{
   border-radius: 10px;
   border: 3px solid;
   background: none;
-  font-size: 2em;
+  font-size: 2rem;
   text-decoration: none;
   margin-top: 10vh;
   color: rgb(132, 86, 164);
@@ -246,10 +292,10 @@ figcaption{
   border-radius: 10px;
   border: 3px solid;
   background: none;
-  font-size: 2em;
+  font-size: 2rem;
   text-decoration: none;
   margin-left: 74vw;
-  margin-top: 10vh;
+  margin-top: 5vh;
   color: rgb(132, 86, 164);
 }
 
@@ -265,8 +311,44 @@ figcaption{
   margin-left: 84vw;
 }
 
+@media only screen and (max-width:1500px){
+  .next-button button{
+    margin-left: 68vw;
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  #website-section h3{
+    font-size: 3.8rem;
+  }
+
+  #website-section p{
+    font-size: 1.1rem;
+  }
+
+  .next-button button{
+    margin-top: 10vh;
+    margin-left: 70vw;
+    font-size: 1.5rem;
+    padding: .3rem 2.1rem;
+  }
+
+  .back-button button{
+    margin-top: 10vh;
+    font-size: 1.5rem;
+    padding: .3rem 2.1rem;
+  }
+
+  .next-button button{
+    margin-left: 65vw;
+  }
+}
+
 /*Journey Page*/
 
+#journey-body li{
+  text-align: left;
+}
 
 /*Title*/
 
@@ -275,11 +357,11 @@ figcaption{
 }
 
 #top-journey {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, .9)), url("./Images/Blank\ 16\ Grids\ Collage\ \(2\).png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.93),rgba(0, 0, 0, .93)), url("./Images/Blank\ 16\ Grids\ Collage\ \(2\).png");
   background-size: cover;
   background-repeat: none;
   background-position: center;
-  height: 155vh;
+  height: 100vh;
   display: flex;
   flex-flow: column;
 }
@@ -291,14 +373,25 @@ figcaption{
   padding: 25vh;
 }
 
+#journey-body h2{
+  width: 75%;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width:1500px){
+  #Journey-title h1{
+    font-size: 7rem;
+  }
+}
+
 /*Start of Journey*/
 
 #Fourteen{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url("./Images/Blank\ 16\ Grids\ Collage\ \(1\).png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.93),rgba(0, 0, 0, 0.93)), url("./Images/Blank\ 16\ Grids\ Collage.png");
   background-size: cover;
   background-repeat: none;
   background-position: center;
-  height: 215vh;
+  height: 208vh;
 }
 
 .image-14 img{
@@ -306,7 +399,8 @@ figcaption{
   height: 50vh;
   border-radius: 1rem;
   margin-bottom: 4rem;
-  opacity: 0.65;
+  opacity: 0.75;
+  object-fit: cover;
 }
 
 .image-14 h2{
@@ -326,7 +420,7 @@ figcaption{
 }
 
 .description-14{
-  background-color: rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 1rem;
   font-size: 2rem;
   width: fit-content;
@@ -338,7 +432,75 @@ figcaption{
   line-height: 2;
 }
 
+@media only screen and (max-width:1500px){
+  .image-14 img{
+    height: 40vh;
+  }
 
+  .image-14 h2{
+    font-size: 3rem;
+  }
+
+  .description-14{
+    font-size: 1.8rem;
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width:1200px){
+  .image-14 img{
+    height: 32vh;
+  }
+}
+
+/*Barriers*/
+
+#barriers{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.93),rgba(0, 0, 0, 0.93)), url("./Images/Blank\ 16\ Grids\ Collage\ \(5\).png");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  height: 155vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#barriers h2{
+  color: white;
+  font-size: 4rem;
+  opacity: 0.75;
+}
+
+.description-barriers{
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  font-size: 2rem;
+  width: fit-content;
+  padding: 4rem;
+  margin-top: 20vh;
+  position: relative;
+  text-align: left;
+  line-height: 2;
+}
+
+@media only screen and (max-width:1500px){
+  .description-barriers{
+    font-size: 1.8rem;
+    padding: 3rem;
+  }
+
+  #barriers h2{
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width:1200px){
+  #barriers h2{
+    font-size: 2.7rem;
+  }
+}
 
 /*Statistics*/
 
@@ -358,6 +520,12 @@ figcaption{
   line-height: 4;
 }
 
+@media only screen and (max-width:1500px){
+  #Statistics p{
+    font-size: 3rem;
+  }
+}
+
 /*End of Journey*/
 
 #Eighteen{
@@ -365,7 +533,7 @@ figcaption{
   background-size: cover;
   background-repeat: none;
   background-position: center;
-  height: 213vh;
+  height: 210vh;
   display: flex;
   flex-flow: column;
 }
@@ -376,6 +544,7 @@ figcaption{
   border-radius: 1rem;
   margin-bottom: 4rem;
   opacity: .75;
+  object-fit: cover;
 }
 
 .image-18 h2{
@@ -394,7 +563,7 @@ figcaption{
 }
 
 .description-18{
-  background-color: rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 1rem;
   font-size: 2rem;
   width: fit-content;
@@ -406,13 +575,128 @@ figcaption{
   line-height: 2;
 }
 
-#journey-button button{
+@media only screen and (max-width:1500px){
+  .image-18 img{
+    height: 40vh;
+  }
+
+  .image-18 h2{
+    font-size: 3rem;
+  }
+
+  .description-18{
+    font-size: 1.8rem;
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width:1200px){
+  .image-18 img{
+    height: 32vh;
+  }
+}
+
+/*Improvements*/
+
+#improvements{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url("./Images/Blank\ 16\ Grids\ Collage\ \(1\).png");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  height: 156vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#improvements h2{
+  color: white;
+  font-size: 4rem;
+  margin-top: 10vh;
+  opacity: .75;
+}
+
+.description-improvements{
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  font-size: 2rem;
+  width: fit-content;
+  padding: 4rem;
+  margin-top: 20vh;
+  position: relative;
+  text-align: left;
+  line-height: 2;
+}
+
+#button-container button{
+  margin-top: 45vh;
+}
+
+#button-container .back-button button{
+  padding: .3rem 2.5rem;
+  border-radius: 10px;
+  border: 3px solid;
+  background: none;
+  font-size: 2rem;
+  text-decoration: none;
   color: white;
   opacity: 0.75;
 }
 
-#journey-button {
-  margin-top: 10vh;
+#button-container .next-button button{
+  padding: .3rem 2.5rem;
+  border-radius: 10px;
+  border: 3px solid;
+  background: none;
+  font-size: 2rem;
+  text-decoration: none;
+  margin-left: 74vw;
+  color: white;
+  opacity: .75;
+}
+
+@media only screen and (max-width:1500px){
+  #improvements h2{
+    font-size: 3rem;
+  }
+
+  #button-container{
+    margin-top: 22vh;
+  }
+
+  .description-improvements{
+    font-size: 1.8rem;
+    padding: 3.5rem;
+  }
+
+  #button-container .back-button button{
+    font-size: 1.7rem;
+  }
+
+  #button-container .next-button button{
+    margin-left: 68vw;
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  #button-container{
+    margin-top: 20vh;
+  }
+
+  #improvements h2{
+    font-size: 2.7rem;
+  }
+
+  #button-container .back-button button{
+    font-size: 1.5rem;
+  }
+
+  #button-container .next-button button{
+    margin-left: 65vw;
+    font-size: 1.5rem;
+  }
 }
 
 /*Classes Page*/
@@ -452,6 +736,7 @@ hr{
   height: 60vh;
   margin-left: 5rem;
   border-radius: 2rem;
+  object-fit:fill;
 }
 
 .class h3{
@@ -477,10 +762,40 @@ hr{
   margin-bottom: 6vh;
 }
 
+@media only screen and (max-width:1500px){
+  .class img{
+    height: 47vh;
+    width: 37vw;
+  }
+
+  .class p{
+    font-size: 1.2rem;
+  }
+
+  .class h3{
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width:1200px){
+  .class img{
+    height: 40vh;
+    width: 35vw;
+  }
+
+  .class p{
+    font-size: 1rem;
+  }
+
+  .class h3{
+    font-size: 3rem;
+  }
+}
+
 /*Work Page*/
 
 #work-body{
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(231, 221, 235);
 }
 
 .gallery{
@@ -501,8 +816,8 @@ hr{
   background-color: rgb(231, 221, 235);
   width: 90vw;
   height: 81.5vh;
-  padding-right: 12rem;
-  padding-left: 3rem;
+  margin-right: 12rem;
+  margin-left: 3rem;
 }
 
 .gallery img{
@@ -557,9 +872,93 @@ hr{
 
 #work-footer{
   height: 5vh;
-  width: 605.4vw;
+  width: 650vw;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px -3px 10px rgb(161, 143, 167);
+}
+
+@media only screen and (max-width:1500px){
+  .gallery h3{
+    font-size: 3.3rem;
+    padding: 0 3rem;
+  }
+
+  .gallery p{
+    font-size: 1.1rem;
+    width: 50vw;
+  }
+
+  .gallery img{
+    width: 45vw;
+    height: 55vh;
+  }
+
+  .work-box .rabbit{
+    height: 55vh;
+    width: 40vw;
+  }
+  
+  .work-box .chairs{
+    width: 42vw;
+    height: 40vh;
+  }
+  
+  .work-box .crochet{
+    height: 60vh;
+    width: 35vw;
+  }
+  
+  .work-box .ww2{
+    height: 60vh;
+    width: 22vw;
+  }
+}
+
+@media only screen and (max-width:1200px){
+  .gallery h3{
+    font-size: 3rem;
+    padding: 0 2rem;
+  }
+
+  .gallery p{
+    font-size: .95rem;
+    width: 55vw;
+  }
+
+  .gallery img{
+    width: 45vw;
+    height: 55vh;
+  }
+
+  .work-box{
+    width: 100vw;
+    margin-right: 5rem;
+    margin-left: 0;
+  }
+
+  .work-box .rabbit{
+    height: 55vh;
+    width: 45vw;
+  }
+  
+  .work-box .chairs{
+    width: 50vw;
+    height: 37vh;
+  }
+  
+  .work-box .crochet{
+    height: 57vh;
+    width: 40vw;
+  }
+  
+  .work-box .ww2{
+    height: 60vh;
+    width: 25vw;
+  }
+
+  #work-footer{
+    width: 690vw;
+  }
 }
 
 /*Career & College*/
@@ -578,7 +977,7 @@ hr{
   display: flex;
   flex-flow: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   height: 400px;
   width: 83vw;
   background-color: rgba(208, 5, 5, 0.85);
@@ -590,7 +989,6 @@ hr{
 
 #parallax h2{
   font-size: 10rem;
-  margin-left: 30vw;
   color: white;
 }
 
@@ -607,4 +1005,43 @@ hr{
   text-align: left;
   color:white;
   width: 65vw;
+}
+
+#career-title{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1500px){
+  #parallax div{
+    padding: 0 0;
+  }
+
+  #parallax h2{
+    font-size: 8rem;
+  }
+
+  #parallax h3{
+    font-size: 3rem;
+  }
+
+  #parallax p{
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1500px){
+  #parallax h2{
+    font-size: 6rem;
+  }
+
+  #parallax h3{
+    font-size: 2.7rem;
+  }
+
+  #parallax p{
+    font-size: 1.7rem;
+  }
 }
